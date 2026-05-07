@@ -1,0 +1,17 @@
+{
+  "name": "my-vuepress-site",
+  "version": "1.0.0",
+  "description": "个人网站 - VuePress + Theme Hope",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "keywords": ["vuepress", "blog", "personal-site"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@vuepress/bundler-vite": "^2.0.0-rc.14",
+    "vuepress": "^2.0.0-rc.14",
+    "vuepress-theme-hope": "^2.0.0-rc.52"
+  }
+}
