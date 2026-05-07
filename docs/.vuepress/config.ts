@@ -7,7 +7,7 @@ export default defineUserConfig({
   lang: "zh-CN",
   title: "我的个人网站",
   description: "记录技术、产品和思考",
-  base: "/my-vuepress-site/",
+  base: "/",
 
   theme: hopeTheme({
     hostname: "https://yourdomain.com",
