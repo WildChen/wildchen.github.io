@@ -13,7 +13,7 @@ export default defineUserConfig({
     hostname: "https://yourdomain.com",
 
     author: {
-      name: "你的名字",
+      name: "aronchen",
       url: "/about/",
     },
 
