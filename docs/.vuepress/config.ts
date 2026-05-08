@@ -85,7 +85,7 @@ export default defineUserConfig({
     contributors: false,
     lastUpdated: false,
 
-    docsDir: "docs/src",
+    docsDir: "docs",
     iconAssets: "fontawesome",
 
     plugins: {

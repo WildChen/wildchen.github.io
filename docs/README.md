@@ -1,7 +1,5 @@
 ---
 home: true
-icon: home
-title: 首页
 heroText: 理解世界，然后用 AI 改造它
 tagline: Developer · Builder · Writer
 actions:
