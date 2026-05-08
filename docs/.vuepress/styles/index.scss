@@ -38,39 +38,251 @@
   display: none !important;
 }
 
-/* 页脚 */
+/* ===== Hero 区域样式 ===== */
+.vp-hero-info-wrapper {
+  padding: 86px 0 74px !important;
+  background: radial-gradient(circle at 12% 12%, rgba(20, 124, 117, 0.18), rgba(0, 0, 0, 0) 34%),
+              radial-gradient(circle at 86% 18%, rgba(9, 109, 217, 0.18), rgba(0, 0, 0, 0) 32%),
+              linear-gradient(135deg, rgb(248, 251, 255), rgb(238, 245, 251) 48%, rgb(247, 239, 229)) !important;
+  border-radius: 12px;
+  margin: 2rem;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vp-hero-info {
+  text-align: center !important;
+}
+
+.vp-hero-title {
+  font-size: 2.8rem !important;
+  font-weight: 600 !important;
+  color: rgb(17, 24, 39) !important;
+  line-height: 1.25 !important;
+  margin-bottom: 1rem !important;
+}
+
+.vp-hero-infos p {
+  font-size: 1.1rem !important;
+  color: rgb(107, 114, 128) !important;
+}
+
+.vp-hero-actions {
+  margin-top: 2rem !important;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.vp-hero-action {
+  border-radius: 8px !important;
+  padding: 0.75rem 1.5rem !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+}
+
+.vp-hero-action.primary {
+  background: rgb(9, 109, 217) !important;
+  color: white !important;
+  border: none !important;
+}
+
+.vp-hero-action.primary:hover {
+  background: rgb(7, 89, 178) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(9, 109, 217, 0.3);
+}
+
+.vp-hero-action.secondary {
+  background: rgba(9, 109, 217, 0.1) !important;
+  color: rgb(9, 109, 217) !important;
+  border: 1px solid rgba(9, 109, 217, 0.2) !important;
+}
+
+.vp-hero-action.secondary:hover {
+  background: rgba(9, 109, 217, 0.2) !important;
+  transform: translateY(-1px);
+}
+
+/* ===== Feature 产品卡片 - 深色玻璃拟态 ===== */
+.vp-feature-wrapper {
+  margin: 2rem !important;
+}
+
+.vp-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.vp-feature-item {
+  background: rgba(9, 16, 30, 0.62) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  border-radius: 8px !important;
+  padding: 1.5rem !important;
+  color: white !important;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.vp-feature-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.vp-feature-item .vp-feature-title {
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+  color: white !important;
+}
+
+.vp-feature-item .vp-feature-title::before {
+  content: attr(data-number);
+  display: block;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.vp-feature-item .vp-feature-details {
+  font-size: 0.9rem !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  line-height: 1.5 !important;
+}
+
+/* ===== 内容区域样式 ===== */
+.theme-hope-content h2 {
+  font-size: 1.8rem !important;
+  font-weight: 600 !important;
+  color: rgb(17, 24, 39) !important;
+  margin-top: 3rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.theme-hope-content h2:first-of-type {
+  margin-top: 1rem !important;
+}
+
+/* Blog 区域标签样式 */
+.theme-hope-content p a {
+  color: rgb(9, 109, 217) !important;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.theme-hope-content p a:hover {
+  text-decoration: underline;
+}
+
+/* ===== 专栏表格改为卡片 ===== */
+.theme-hope-content table {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  border: none !important;
+  width: 100%;
+}
+
+.theme-hope-content table thead {
+  display: none;
+}
+
+.theme-hope-content table tbody {
+  display: contents;
+}
+
+.theme-hope-content table tr {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: rgb(249, 250, 251);
+  border: 1px solid rgb(229, 231, 235);
+  transition: all 0.2s;
+}
+
+.theme-hope-content table tr:hover {
+  background: rgb(243, 244, 246);
+  border-color: rgb(209, 213, 219);
+  transform: translateY(-1px);
+}
+
+.theme-hope-content table td {
+  border: none !important;
+  padding: 0 !important;
+}
+
+.theme-hope-content table td:first-child {
+  font-weight: 600;
+  color: rgb(17, 24, 39);
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+.theme-hope-content table td:last-child {
+  color: rgb(107, 114, 128);
+  font-size: 0.9rem;
+}
+
+/* ===== 分隔线样式 ===== */
+.theme-hope-content hr {
+  border: none;
+  border-top: 1px solid rgb(229, 231, 235);
+  margin: 3rem 0;
+}
+
+/* ===== 页脚 ===== */
+.vp-footer-wrapper {
+  margin-top: 4rem;
+}
+
 .vp-footer {
   background: rgb(249, 250, 251) !important;
   border-top: 1px solid rgb(229, 231, 235) !important;
   color: rgb(107, 114, 128) !important;
+  padding: 2rem 0 !important;
 }
 
-/* 响应式调整 */
+/* ===== 响应式调整 ===== */
 @media (max-width: 768px) {
   .theme-hope-content {
     padding: 0 1rem;
   }
   
-  .landing-hero h1 {
+  .vp-hero-title {
     font-size: 2rem !important;
   }
   
-  .product-grid,
-  .oss-grid {
+  .vp-hero-info-wrapper {
+    margin: 1rem;
+    padding: 60px 0 50px !important;
+  }
+  
+  .vp-features {
     grid-template-columns: 1fr !important;
   }
   
-  .series-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
+  .theme-hope-content table {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .vp-feature-wrapper {
+    margin: 1rem !important;
   }
 }
 
-/* 平滑滚动 */
+/* ===== 平滑滚动 ===== */
 html {
   scroll-behavior: smooth;
 }
 
-/* 选择文本颜色 */
+/* ===== 选择文本颜色 ===== */
 ::selection {
   background: rgba(9, 109, 217, 0.2);
   color: rgb(17, 24, 39);
