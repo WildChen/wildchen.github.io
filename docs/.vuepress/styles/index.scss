@@ -1,0 +1,77 @@
+/* 全局样式覆盖 - 匹配 canghe.ai 风格 */
+
+/* 导航栏 */
+.vp-navbar {
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: none !important;
+  height: 60px;
+}
+
+.vp-navbar .vp-nav-links .nav-link {
+  color: rgb(75, 85, 99) !important;
+  font-weight: 500;
+}
+
+.vp-navbar .vp-nav-links .nav-link:hover {
+  color: rgb(9, 109, 217) !important;
+}
+
+/* 页面标题隐藏（首页不需要显示"首页"标题） */
+.vp-page-title {
+  display: none !important;
+}
+
+/* 主内容区域 */
+.vp-page {
+  padding-top: 0 !important;
+}
+
+.theme-hope-content {
+  max-width: 1200px !important;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* 隐藏默认的编辑链接和贡献者 */
+.vp-meta-wrapper {
+  display: none !important;
+}
+
+/* 页脚 */
+.vp-footer {
+  background: rgb(249, 250, 251) !important;
+  border-top: 1px solid rgb(229, 231, 235) !important;
+  color: rgb(107, 114, 128) !important;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .theme-hope-content {
+    padding: 0 1rem;
+  }
+  
+  .landing-hero h1 {
+    font-size: 2rem !important;
+  }
+  
+  .product-grid,
+  .oss-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .series-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* 平滑滚动 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 选择文本颜色 */
+::selection {
+  background: rgba(9, 109, 217, 0.2);
+  color: rgb(17, 24, 39);
+}

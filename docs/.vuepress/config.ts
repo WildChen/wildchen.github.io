@@ -5,12 +5,12 @@ import { hopeTheme } from "vuepress-theme-hope";
 export default defineUserConfig({
   bundler: viteBundler(),
   lang: "zh-CN",
-  title: "我的个人网站",
-  description: "记录技术、产品和思考",
+  title: "苍何之旅",
+  description: "记录技术实践、产品思考和独立开发历程",
   base: "/",
 
   theme: hopeTheme({
-    hostname: "https://yourdomain.com",
+    hostname: "https://wildchen.github.io",
 
     author: {
       name: "aronchen",
@@ -39,11 +39,13 @@ export default defineUserConfig({
 
     sidebar: false,
 
-    footer: "MIT Licensed | Copyright © 2026",
+    footer: "MIT Licensed | Copyright © 2026 aronchen",
     displayFooter: true,
 
     blog: false,
     editLink: false,
+    contributors: false,
+    lastUpdated: false,
 
     docsDir: "docs/src",
     iconAssets: "fontawesome",
